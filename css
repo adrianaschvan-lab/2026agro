@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f2f7f2;
+}
+
+header{
+    background:linear-gradient(135deg,#2e7d32,#4caf50);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+nav{
+    background:#1b5e20;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.card{
+    max-width:1000px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+
+    animation: aparecer 1.2s ease;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+.galeria{
+    display:flex;
+    gap:10px;
+    margin:20px 0;
+}
+
+.galeria img{
+    width:33%;
+    transition:0.4s;
+}
+
+.galeria img:hover{
+    transform:scale(1.05);
+}
+
+h2{
+    color:#2e7d32;
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:20px;
+}
+
+button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+
+#curiosidade{
+    margin-top:15px;
+    font-weight:bold;
+    color:#1b5e20;
+}
+
+footer{
+    text-align:center;
+    background:#2e7d32;
+    color:white;
+    padding:20px;
+    margin-top:30px;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
